@@ -5,9 +5,9 @@ import org.eclipse.jetty.servlet.ServletHolder;
 
 import java.util.List;
 
-public class Server {
+public class ServletCRUD {
     private static final int PORT = 8080;
-    public Server() {
+    public ServletCRUD() {
     }
 
     public void fillServletContainer(
