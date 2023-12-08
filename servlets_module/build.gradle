@@ -1,0 +1,11 @@
+dependencies {
+    implementation project(path: ':consoleApp')
+    implementation 'org.projectlombok:lombok:1.18.28'
+    implementation project(path: ':models')
+    testImplementation platform('org.junit:junit-bom:5.9.1')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+}
+
+test {
+    useJUnitPlatform()
+}

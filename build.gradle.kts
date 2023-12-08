@@ -1,6 +1,7 @@
 plugins {
     id("java")
     kotlin("jvm") version "1.9.20-RC"
+    war
 }
 
 
@@ -29,8 +30,6 @@ allprojects {
 }
 
 
-
-
 dependencies {
     implementation(kotlin("stdlib-jdk8"))
     implementation(project(":models"))
@@ -38,6 +37,8 @@ dependencies {
     implementation(project(":generator")) // Зависимость от модуля "generator"
     implementation(project(":deserialization"))
     implementation(project(":serialization"))
+    implementation("javax.servlet:javax.servlet-api:4.0.1")
+    implementation("org.eclipse.jetty:jetty-server:9.4.44.v20210927")
 }
 
 tasks.test {
