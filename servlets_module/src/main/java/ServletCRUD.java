@@ -11,7 +11,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 @WebServlet("/MyServlet")
-public class Servlet extends HttpServlet {
+public class ServletCRUD extends HttpServlet {
 
     private ConnectionDB connectionDB;
     private Quaery quaery;
